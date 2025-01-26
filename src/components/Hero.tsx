@@ -3,8 +3,10 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation'; // Use the App Router's useRouter
 
 const HeroSection: React.FC = () => {
+  const router = useRouter(); // Initialize the router using next/navigation
   const images = [
     '/image.png', // Replace with your image paths
     '/image.png',
@@ -22,6 +24,11 @@ const HeroSection: React.FC = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
+  };
+
+  // Handle button click to navigate to the search page
+  const handleButtonClick = (url: string) => {
+    router.push(url); // Redirect to the specified URL
   };
 
   return (
@@ -54,7 +61,10 @@ const HeroSection: React.FC = () => {
         <p className="mt-4 text-lg text-gray-700 leading-relaxed max-w-2xl">
           Discover a variety of dance workshops for every style, level, and preference. Whether you&apos;re into hip-hop, salsa, classical, or freestyle, our curated listings make it easy to find something you&apos;ll love.
         </p>
-        <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium shadow-md transition">
+        <button
+          className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium shadow-md transition"
+          onClick={() => handleButtonClick('/search')} // Navigate to search page
+        >
           Register a Class
         </button>
       </div>
