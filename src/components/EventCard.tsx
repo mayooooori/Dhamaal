@@ -1,13 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 
-const EventCard = () => {
+// Define the props interface
+interface EventCardProps {
+  image: string;
+  name: string;
+  price: string;
+  subContext: string;
+  eventUrl: string;
+}
+
+const EventCard: React.FC<EventCardProps> = ({ image, name, price, subContext, eventUrl }) => {
   return (
     <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white">
       <div className="relative w-full h-48">
         <Image
-          src="/event.png" // Use your image URL or path
-          alt="Event Poster"
+          src={image} // Use the passed image prop
+          alt={`${name} Poster`} // Use the passed name prop for alt text
           layout="fill"
           objectFit="cover"
           quality={75} // Optional: adjust quality for better performance
@@ -15,13 +25,13 @@ const EventCard = () => {
       </div>
       <div className="p-4">
         <div className="flex justify-between items-center">
-          <h3 className="text-xl font-semibold text-gray-800">Event Name</h3>
-          <span className="text-lg font-semibold text-gray-900">$50</span>
+          <h3 className="text-xl font-semibold">{name}</h3>
+          <span className="text-lg text-gray-600">{price}</span>
         </div>
-        <p className="text-sm text-gray-500 mt-2 mb-4">Sub context about the event.</p>
-        <Link 
-          href="/event-details" 
-          className="block w-full py-2 px-4 bg-white text-black border border-black text-center rounded-sm hover:bg-slate-300 transition-colors duration-300"
+        <p className="text-sm text-gray-500 mt-2">{subContext}</p>
+        <Link
+          href={eventUrl}
+          className="mt-4 inline-block w-full py-2 px-4 border border-black bg-white text-black text-center rounded-sm hover:bg-slate-200 transition-colors"
         >
           View Event
         </Link>

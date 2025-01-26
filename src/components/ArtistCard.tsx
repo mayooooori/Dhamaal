@@ -1,20 +1,29 @@
 import Image from 'next/image';
+import React from 'react';
 
-const ArtistCard = () => {
+interface ArtistCardProps {
+  image: string;
+  name: string;
+  bio1: string;
+  bio2: string;
+}
+
+const ArtistCard: React.FC<ArtistCardProps> = ({ image, name, bio1, bio2 }) => {
   return (
     <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white">
       <div className="relative w-full h-48">
         <Image
-          src="/artist.png" // Use your image path here
-          alt="Artist"
+          src={image} // Use the passed image prop
+          alt={name} // Use the passed name prop for alt text
           layout="fill" // Makes the image fill the container
           objectFit="cover" // Ensures the image covers the div without distortion
           quality={75} // Adjust the image quality for optimal performance
         />
       </div>
       <div className="p-4">
-        <h3 className="text-xl font-semibold">Artist Name</h3>
-        <p className="text-sm text-gray-500 mt-2">This is a short bio about the artist. They are known for dancing. they can dance well</p>
+        <h3 className="text-xl font-semibold">{name}</h3>
+        <p className="text-sm text-gray-500 mt-2">{bio1}</p>
+        <p className="text-sm text-gray-500 mt-1">{bio2}</p>
       </div>
     </div>
   );
