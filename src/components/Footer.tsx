@@ -1,17 +1,19 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
-import { BsTwitterX } from 'react-icons/bs'; // Correct X icon import
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs"; // Correct X icon import
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white text-gray-800 w-full mt-auto py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-screen-xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         {/* Top Section */}
-        <div className="flex flex-col items-center lg:flex-row lg:justify-between mb-12"> {/* Increased space */}
+        <div className="flex flex-col items-center lg:flex-row lg:justify-between mb-12">
+          {" "}
+          {/* Increased space */}
           {/* Logo (Centered for mobile) */}
           <div className="flex-shrink-0 mb-4 lg:mb-0">
             <Image
@@ -22,10 +24,11 @@ const Footer: React.FC = () => {
               priority
             />
           </div>
-
           {/* Links with more spacing for mobile */}
-          <div className="flex flex-col items-center lg:flex-row lg:space-x-6 text-sm space-y-4 lg:space-y-0"> {/* Added space-y-4 for mobile */}
-            <Link href="/workshop" className="hover:text-black font-medium">
+          <div className="flex flex-col items-center lg:flex-row lg:space-x-6 text-sm space-y-4 lg:space-y-0">
+            {" "}
+            {/* Added space-y-4 for mobile */}
+            <Link href="/search" className="hover:text-black font-medium">
               Workshop
             </Link>
             <Link href="/artists" className="hover:text-black font-medium">
@@ -37,26 +40,43 @@ const Footer: React.FC = () => {
             <Link href="/login" className="hover:text-black font-medium">
               Login
             </Link>
-            <Link href="/register" className="hover:text-black font-medium">
+            <Link href="/sign-up" className="hover:text-black font-medium">
               Register
             </Link>
           </div>
-
           {/* Social Media Icons */}
-          <div className="flex justify-center space-x-4 mt-4 lg:mt-0 lg:ml-8"> {/* Added lg:ml-8 for spacing */}
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <div className="flex justify-center space-x-4 mt-4 lg:mt-0 lg:ml-8">
+            {" "}
+            {/* Added lg:ml-8 for spacing */}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebook className="text-2xl hover:text-black" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="text-2xl hover:text-black" />
             </a>
             <a href="https://x.com" target="_blank" rel="noopener noreferrer">
               <BsTwitterX className="text-2xl hover:text-black" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin className="text-2xl hover:text-black" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaYoutube className="text-2xl hover:text-black" />
             </a>
           </div>
@@ -66,8 +86,13 @@ const Footer: React.FC = () => {
         <div className="my-8 border-t border-black mx-auto w-full"></div>
 
         {/* Bottom Section */}
-        <div className="flex justify-center mb-4"> {/* Ensuring bottom section is centered */}
-          <span className="font-medium text-xs lg:text-sm">© 2024 Relume. All Rights Reserved.</span> {/* Reduced font */}
+        <div className="flex justify-center mb-4">
+          {" "}
+          {/* Ensuring bottom section is centered */}
+          <span className="font-medium text-xs lg:text-sm">
+            © 2024 Relume. All Rights Reserved.
+          </span>{" "}
+          {/* Reduced font */}
         </div>
 
         {/* Bottom Links with Underline */}
