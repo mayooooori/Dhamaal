@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-// Define the props interface
 interface EventCardProps {
   image: string;
   name: string;
@@ -14,13 +13,13 @@ interface EventCardProps {
 const EventCard: React.FC<EventCardProps> = ({ image, name, price, subContext, eventUrl }) => {
   return (
     <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white">
-      <div className="relative w-full h-48">
+      <div className="relative w-full h-72"> {/* Increased height for a rectangular look */}
         <Image
-          src={image} // Use the passed image prop
-          alt={`${name} Poster`} // Use the passed name prop for alt text
+          src={image}
+          alt={`${name} Poster`}
           layout="fill"
           objectFit="cover"
-          quality={75} // Optional: adjust quality for better performance
+          quality={75}
         />
       </div>
       <div className="p-4">

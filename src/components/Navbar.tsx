@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   return (
@@ -26,13 +26,22 @@ const Navbar: React.FC = () => {
 
             {/* Links for Desktop */}
             <div className="hidden lg:flex items-center space-x-6 ml-auto">
-              <Link href="/classes" className="text-gray-800 hover:text-black font-semibold text-sm">
+              <Link
+                href="/classes"
+                className="text-gray-800 hover:text-black font-semibold text-sm"
+              >
                 Classes
               </Link>
-              <Link href="/artists" className="text-gray-800 hover:text-black font-semibold text-sm">
+              <Link
+                href="/artists"
+                className="text-gray-800 hover:text-black font-semibold text-sm"
+              >
                 Explore Artists
               </Link>
-              <Link href="/rent-studio" className="text-gray-800 hover:text-black font-semibold text-sm">
+              <Link
+                href="/rent-studio"
+                className="text-gray-800 hover:text-black font-semibold text-sm"
+              >
                 Rent a Studio
               </Link>
               <Link
@@ -42,7 +51,7 @@ const Navbar: React.FC = () => {
                 Login
               </Link>
               <Link
-                href="/register"
+                href="/sign-up"
                 className="bg-blue-600 text-white px-4 py-2 rounded-md border border-blue-600 font-medium text-sm"
               >
                 Register
@@ -61,9 +70,9 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </nav>
-
       {/* White padding underneath the navbar */}
-      <div className="bg-white h-6"></div> {/* This part will not have shadow */}
+      <div className="bg-white h-6"></div>{" "}
+      {/* This part will not have shadow */}
     </div>
   );
 };

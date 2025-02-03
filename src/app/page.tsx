@@ -6,64 +6,65 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Reviews from "@/components/Reviews";
 import Link from "next/link"; // Import Link for navigation
+import Footer from "@/components/Footer";
 
 export default function Home() {
   // Example data for events and artists
   const eventData = [
     {
-      image: '/event.png',
-      name: 'Event Name 1',
-      price: '$50',
-      subContext: 'Sub context about the event.',
-      eventUrl: '/event-details/1',
+      image: "/event.png",
+      name: "Event Name 1",
+      price: "$50",
+      subContext: "Sub context about the event.",
+      eventUrl: "/event-details/1",
     },
     {
-      image: '/event.png',
-      name: 'Event Name 2',
-      price: '$30',
-      subContext: 'Sub context about the event.',
-      eventUrl: '/event-details/2', 
+      image: "/event.png",
+      name: "Event Name 2",
+      price: "$30",
+      subContext: "Sub context about the event.",
+      eventUrl: "/event-details/2",
     },
     {
-      image: '/event.png',
-      name: 'Event Name 3',
-      price: '$40',
-      subContext: 'Sub context about the event.',
-      eventUrl: '/event-details/3',
+      image: "/event.png",
+      name: "Event Name 3",
+      price: "$40",
+      subContext: "Sub context about the event.",
+      eventUrl: "/event-details/3",
     },
     {
-      image: '/event.png',
-      name: 'Event Name 4',
-      price: '$60',
-      subContext: 'Sub context about the event.',
-      eventUrl: '/event-details/4',
+      image: "/event.png",
+      name: "Event Name 4",
+      price: "$60",
+      subContext: "Sub context about the event.",
+      eventUrl: "/event-details/4",
     },
   ];
 
   const artistData = [
     {
-      image: '/artist.png',
-      name: 'Artist Name 1',
-      bio1: 'This is a short bio about the artist.',
-      bio2: 'Additional details about their career.',
+      image: "/artist.png",
+      name: "Artist Name 1",
+      bio: "This is a short bio about the artist.",
+      artistURL: "/artist-details/1",
     },
     {
-      image: '/artist.png',
-      name: 'Artist Name 2',
-      bio1: 'This is a short bio about the artist.',
-      bio2: 'Additional details about their career.',
+      image: "/artist.png",
+      name: "Artist Name 2",
+      bio: "This is a short bio about the artist.",
+      artistURL: "/artist-details/2",
     },
     {
-      image: '/artist.png',
-      name: 'Artist Name 3',
-      bio1: 'This is a short bio about the artist.',
-      bio2: 'Additional details about their career.',
+      image: "/artist.png",
+      name: "Artist Name 3",
+      bio: "This is a short bio about the artist.",
+      artistURL: "/artist-details/3",
     },
     {
-      image: '/artist.png',
-      name: 'Artist Name 4',
-      bio1: 'This is a short bio about the artist.',
-      bio2: 'Additional details about their career.',
+      image: "/artist.png",
+      name: "Artist Name 4",
+      bio: "This is a short bio about the artist.",
+      artistURL: "/artist-details/4",
     },
   ];
 
@@ -110,25 +111,25 @@ export default function Home() {
                 key={index}
                 image={artist.image}
                 name={artist.name}
-                bio1={artist.bio1}
-                bio2={artist.bio2}
+                bio={artist.bio}
+                artistURL={artist.artistURL}
               />
             ))}
           </div>
           <div className="mt-4 text-center">
             <Link
-              href="/search"
+              href="/artists"
               className="inline-block py-2 px-14 mt-4 border border-black bg-white text-black rounded-sm hover:bg-slate-200 transition-colors"
             >
               See More Artists
             </Link>
           </div>
         </div>
-
         <Reviews />
         <ContactBanner />
         <Banner />
       </main>
+      <Footer />
     </div>
   );
 }
