@@ -1,0 +1,149 @@
+{
+  "studios": [
+    {
+      "id": 1,
+      "name": "Modern Creative Studio",
+      "price_per_hour": 150,
+      "description": "A spacious, modern studio perfect for photography, video shoots, and creative events. Equipped with state-of-the-art lighting and props.",
+      "location": "123 Creative St, New York, NY 10001",
+      "dates_available": [
+        "2025-02-05",
+        "2025-02-06",
+        "2025-02-10",
+        "2025-02-12"
+      ],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?studio,1",
+        "https://source.unsplash.com/random/500x300/?studio,2",
+        "https://source.unsplash.com/random/500x300/?studio,3"
+      ],
+      "website": "https://www.moderncreativestudio.com"
+    },
+    {
+      "id": 2,
+      "name": "Elegant Art Studio",
+      "price_per_hour": 200,
+      "description": "A sophisticated and elegant space ideal for intimate gatherings, art exhibitions, and workshops. Includes large windows with natural light.",
+      "location": "456 Arts Ave, Los Angeles, CA 90001",
+      "dates_available": ["2025-02-08", "2025-02-14", "2025-02-20"],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?art,1",
+        "https://source.unsplash.com/random/500x300/?art,2",
+        "https://source.unsplash.com/random/500x300/?art,3"
+      ],
+      "website": "https://www.elegantartstudio.com"
+    },
+    {
+      "id": 3,
+      "name": "Industrial Loft Studio",
+      "price_per_hour": 180,
+      "description": "A raw, industrial-style loft with exposed brick walls, concrete floors, and high ceilings. Perfect for creative photo and video shoots.",
+      "location": "789 Industrial Rd, Chicago, IL 60601",
+      "dates_available": ["2025-02-03", "2025-02-07", "2025-02-11"],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?industrial,1",
+        "https://source.unsplash.com/random/500x300/?industrial,2",
+        "https://source.unsplash.com/random/500x300/?industrial,3"
+      ],
+      "website": "https://www.industrialloftstudio.com"
+    },
+    {
+      "id": 4,
+      "name": "Urban Photography Studio",
+      "price_per_hour": 130,
+      "description": "A cozy studio with a minimalist aesthetic, designed for fashion and product photography. Includes a variety of backdrops and props.",
+      "location": "101 Urban St, Miami, FL 33101",
+      "dates_available": ["2025-02-04", "2025-02-09", "2025-02-15"],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?urban,1",
+        "https://source.unsplash.com/random/500x300/?urban,2",
+        "https://source.unsplash.com/random/500x300/?urban,3"
+      ],
+      "website": "https://www.urbanphotographystudio.com"
+    },
+    {
+      "id": 5,
+      "name": "Rooftop Creative Space",
+      "price_per_hour": 220,
+      "description": "An open-air rooftop space with stunning views, perfect for fashion shoots, parties, and events. Equipped with lighting and sound systems.",
+      "location": "222 Sky St, San Francisco, CA 94105",
+      "dates_available": ["2025-02-06", "2025-02-12", "2025-02-18"],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?rooftop,1",
+        "https://source.unsplash.com/random/500x300/?rooftop,2",
+        "https://source.unsplash.com/random/500x300/?rooftop,3"
+      ],
+      "website": "https://www.rooftopcreativespace.com"
+    },
+    {
+      "id": 6,
+      "name": "Luxury Studio Suite",
+      "price_per_hour": 350,
+      "description": "A high-end studio suite with luxury finishes, ideal for high-profile shoots, private events, and executive meetings. Includes full-service amenities.",
+      "location": "333 VIP Blvd, Las Vegas, NV 89044",
+      "dates_available": ["2025-02-07", "2025-02-13", "2025-02-19"],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?luxury,1",
+        "https://source.unsplash.com/random/500x300/?luxury,2",
+        "https://source.unsplash.com/random/500x300/?luxury,3"
+      ],
+      "website": "https://www.luxurystudiosuite.com"
+    },
+    {
+      "id": 7,
+      "name": "Creative Loft Workspace",
+      "price_per_hour": 140,
+      "description": "A flexible, open-concept loft with ample natural light and versatile spaces for creative work, meetings, and photo shoots.",
+      "location": "444 Loft Ave, Austin, TX 73301",
+      "dates_available": ["2025-02-02", "2025-02-10", "2025-02-14"],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?loft,1",
+        "https://source.unsplash.com/random/500x300/?loft,2",
+        "https://source.unsplash.com/random/500x300/?loft,3"
+      ],
+      "website": "https://www.creativeloftworkspace.com"
+    },
+    {
+      "id": 8,
+      "name": "Art Gallery Studio",
+      "price_per_hour": 250,
+      "description": "A large gallery-style studio perfect for exhibitions, workshops, and creative projects. Features open spaces and white walls.",
+      "location": "555 Gallery Rd, Seattle, WA 98001",
+      "dates_available": ["2025-02-03", "2025-02-08", "2025-02-13"],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?gallery,1",
+        "https://source.unsplash.com/random/500x300/?gallery,2",
+        "https://source.unsplash.com/random/500x300/?gallery,3"
+      ],
+      "website": "https://www.artgallerystudio.com"
+    },
+    {
+      "id": 9,
+      "name": "Vintage Film Studio",
+      "price_per_hour": 170,
+      "description": "A vintage-inspired studio with classic film equipment and a retro ambiance, ideal for film shoots and video production.",
+      "location": "666 Retro Blvd, Portland, OR 97201",
+      "dates_available": ["2025-02-04", "2025-02-11", "2025-02-17"],
+      "images": [
+        "https://unsplash.com/photos/group-of-contemporary-active-teens-practicing-vogue-dancing-movements-while-training-in-loft-studio-or-dance-hall-Gryake64JxI",
+        "https://source.unsplash.com/random/500x300/?vintage,2",
+        "https://source.unsplash.com/random/500x300/?vintage,3"
+      ],
+      "website": "https://www.vintagefilmstudio.com"
+    },
+    {
+      "id": 10,
+      "name": "Glamour Photography Studio",
+      "price_per_hour": 190,
+      "description": "A luxury photography studio offering professional lighting setups, backdrops, and props for high-end shoots and fashion photography.",
+      "location": "777 Glamour St, Los Angeles, CA 90046",
+      "dates_available": ["2025-02-06", "2025-02-12", "2025-02-19"],
+      "images": [
+        "https://source.unsplash.com/random/500x300/?glamour,1",
+        "https://source.unsplash.com/random/500x300/?glamour,2",
+        "https://source.unsplash.com/random/500x300/?glamour,3"
+      ],
+      "website": "https://www.glamourphotographystudio.com"
+    }
+  ]
+}

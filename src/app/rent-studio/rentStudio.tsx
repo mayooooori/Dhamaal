@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
-import StudioCard from "@/components/StudioCard"; // Import your StudioCard component
+import StudioCard from "@/components/StudioCard";
+import studiosData from "../../../data/studios.json";
 
 export default function RentStudio() {
   return (
@@ -11,14 +12,18 @@ export default function RentStudio() {
       <div className="mt-20 p-4">
         <h1 className="text-4xl font-bold mb-4">Rent a Studio</h1>
         <p className="text-lg mb-6">
-          Find the perfect studio for your creative projects. Browse through available spaces and book them today!
+          Find the perfect studio for your creative projects. Browse through
+          available spaces and book them today!
         </p>
-        
+
         {/* Search Bars Section */}
         <div className="flex gap-6 mb-6">
           {/* Search Bar for Studio */}
           <div className="w-full sm:w-80 md:w-72">
-            <label htmlFor="studio-search" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="studio-search"
+              className="block text-sm font-medium text-gray-700"
+            >
               Search Studio
             </label>
             <input
@@ -31,7 +36,10 @@ export default function RentStudio() {
 
           {/* Search Bar for Location with Dropdown */}
           <div className="w-full sm:w-80 md:w-72">
-            <label htmlFor="location-search" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="location-search"
+              className="block text-sm font-medium text-gray-700"
+            >
               Location
             </label>
             <select
@@ -50,25 +58,16 @@ export default function RentStudio() {
 
         {/* Cards Display */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {/* Example Studio Card 1 */}
-          <StudioCard
-            image="/studio.png"
-            name="Downtown Studio"
-            location="Downtown"
-            price="$150 per hour"
-            description="A spacious and well-lit studio perfect for photo shoots and events."
-            studioUrl="/studios/downtown-studio"
-          />
-          {/* Example Studio Card 2 */}
-          <StudioCard
-            image="/studio.png"
-            name="Midtown Studio"
-            location="Midtown"
-            price="$200 per hour"
-            description="Modern amenities and large space ideal for workshops and filming."
-            studioUrl="/studios/midtown-studio"
-          />
-          {/* Add more StudioCard components as needed */}
+          {studiosData.studios.map((studio) => (
+            <StudioCard
+              key={studio.id} // Add a unique key for each studio card
+              image={studio.images[0]} // Use the first image from the images array
+              name={studio.name}
+              location={studio.location}
+              price={`$${studio.price_per_hour} per hour`}
+              href={`/rent-studio/${studio.id}`} // This will navigate to the studio details page
+            />
+          ))}
         </div>
       </div>
     </div>
