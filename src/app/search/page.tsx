@@ -42,8 +42,8 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <main className='flex-grow mt-16 md:mt-20'>
-        <div className='container mx-auto px-4'>
+      <main className='flex-grow mt-7'>
+        <div className='max-w-[1200px] mx-auto px-3 md:px-4 lg:px-6'>
           <ExploreSection />
           <SearchBar />
 

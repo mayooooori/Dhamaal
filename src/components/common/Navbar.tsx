@@ -29,6 +29,12 @@ const Navbar: React.FC = () => {
             {/* Links for Desktop */}
             <div className='hidden lg:flex items-center space-x-6 ml-auto'>
               <Link
+                href='/'
+                className='text-gray-800 hover:text-black font-semibold text-sm'
+              >
+                Home
+              </Link>
+              <Link
                 href='/classes'
                 className='text-gray-800 hover:text-black font-semibold text-sm'
               >
@@ -61,7 +67,13 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile Version */}
-            <div className='lg:hidden flex items-center justify-end w-full'>
+            <div className='lg:hidden flex items-center justify-end w-full space-x-4'>
+              <Link
+                href='/'
+                className='border border-gray-400 text-gray-800 bg-white px-4 py-2 rounded-md font-medium text-sm'
+              >
+                Home
+              </Link>
               <Link
                 href='/login'
                 className='border border-blue-600 text-blue-600 bg-white px-4 py-2 rounded-md font-medium text-sm'

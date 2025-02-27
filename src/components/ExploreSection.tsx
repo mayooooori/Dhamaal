@@ -7,7 +7,7 @@ const ExploreTabs: React.FC = () => {
   const tabs = ['Explore Workshops', 'Regular Classes', 'Private Training'];
 
   return (
-    <div className='bg-white p-6 rounded-lg'>
+    <div className='bg-white px-1 md:px-4 lg:px-2 py-4 rounded-lg'>
       {/* Tabs Row */}
       <div className='flex space-x-6 text-lg md:text-2xl font-semibold mb-4 overflow-x-auto whitespace-nowrap hide-scrollbar'>
         {tabs.map((tab) => (

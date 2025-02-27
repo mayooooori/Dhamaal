@@ -44,8 +44,8 @@ const SearchPage = () => {
 
   return (
     <div>
-      <main className='my-8'>
-        <div className='mt-8'>
+      <main>
+        <div className='mt-7'>
           {/* Mobile View */}
           <div className='block lg:hidden grid gap-4'>
             <div>
