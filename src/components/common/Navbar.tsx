@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                 Home
               </Link>
               <Link
-                href='/classes'
+                href='/search'
                 className='text-gray-800 hover:text-black font-semibold text-sm'
               >
                 Classes
