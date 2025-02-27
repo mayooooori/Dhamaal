@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import RentStudio from "./rentStudio";
+import Footer from '@/components/common/Footer';
+import RentStudio from '../../components/rentStudio';
 
 export default function login() {
   return (

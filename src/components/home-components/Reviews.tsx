@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 
 interface Review {
@@ -66,43 +66,45 @@ const Reviews: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#3FA1DE] py-16 px-4 relative h-[400px] flex items-center"> {/* Flexbox for vertical centering */}
+    <section className='bg-[#3FA1DE] py-16 px-4 relative h-[400px] flex items-center'>
+      {' '}
+      {/* Flexbox for vertical centering */}
       {/* Left Arrow */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 flex items-center justify-center shadow-md rounded-full border border-black md:block hidden"
+        className='absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 flex items-center justify-center shadow-md rounded-full border border-black md:block hidden'
       >
         ←
       </button>
-
       {/* Right Arrow */}
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 flex items-center justify-center shadow-md rounded-full border border-black md:block hidden"
+        className='absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 flex items-center justify-center shadow-md rounded-full border border-black md:block hidden'
       >
         →
       </button>
-
       {/* Content Wrapper */}
-      <div className="max-w-3xl mx-auto text-center">
+      <div className='max-w-3xl mx-auto text-center'>
         {/* Star Rating */}
-        <div className="flex justify-center mb-4">
+        <div className='flex justify-center mb-4'>
           {renderStars(reviews[currentIndex].rating)} {/* Render stars */}
         </div>
 
         {/* Review Message */}
-        <p className="text-lg sm:text-xl md:text-2xl italic font-light leading-relaxed">
+        <p className='text-lg sm:text-xl md:text-2xl italic font-light leading-relaxed'>
           &quot;{reviews[currentIndex].message}&quot;
         </p>
 
         {/* Reviewer Info */}
-        <div className="mt-6">
-          <h3 className="font-semibold text-lg">{reviews[currentIndex].name}</h3>
-          <p className="text-sm">{reviews[currentIndex].title}</p>
+        <div className='mt-6'>
+          <h3 className='font-semibold text-lg'>
+            {reviews[currentIndex].name}
+          </h3>
+          <p className='text-sm'>{reviews[currentIndex].title}</p>
         </div>
 
         {/* Pagination Dots */}
-        <div className="flex justify-center items-center gap-2 mt-6">
+        <div className='flex justify-center items-center gap-2 mt-6'>
           {reviews.map((_, index) => (
             <span
               key={index}

@@ -1,7 +1,5 @@
-import Artists from "./artists";
+import Artists from '../../components/artists';
 
 export default function login() {
-    return(
-        <Artists />
-    );
+  return <Artists />;
 }
