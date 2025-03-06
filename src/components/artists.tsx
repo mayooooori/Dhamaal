@@ -1,6 +1,7 @@
 import Navbar from '@/components/common/Navbar';
-import ArtistCard from '@/components/card-components/ArtistCard'; // Import your ArtistCard component
+import ArtistCard from '@/components/card-components/ArtistCard';
 import Footer from '@/components/common/Footer';
+import artistsData from '../../data/artist.json'; // Import the JSON file
 
 export default function Artists() {
   return (
@@ -47,32 +48,26 @@ export default function Artists() {
               className='w-full p-2 border border-gray-300 rounded-md mt-1'
             >
               <option value=''>Select a specialty</option>
-              <option value='painting'>Painting</option>
-              <option value='sculpture'>Sculpture</option>
-              <option value='photography'>Photography</option>
-              <option value='digital'>Digital Art</option>
-              {/* Add more specialties as needed */}
+              <option value='hip-hop'>Hip-Hop</option>
+              <option value='contemporary'>Contemporary</option>
+              <option value='ballet'>Ballet</option>
+              <option value='jazz'>Jazz</option>
+              <option value='salsa'>Salsa</option>
             </select>
           </div>
         </div>
 
         {/* Cards Display */}
         <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-          {/* Example Artist Card 1 */}
-          <ArtistCard
-            image='/artist.png'
-            name='John Doe'
-            bio='A professional photographer with years of experience.'
-            artistURL='/artist/artist-name'
-          />
-          {/* Example Artist Card 2 */}
-          <ArtistCard
-            image='/artist.png'
-            name='Jane Smith'
-            bio='An accomplished painter focused on abstract art.'
-            artistURL='/artist/artist-name'
-          />
-          {/* Add more ArtistCard components as needed */}
+          {artistsData.artists.map((artist) => (
+            <ArtistCard
+              key={artist.id}
+              image={artist.profile_image}
+              name={artist.name}
+              bio={artist.description}
+              artistURL={`/artists/${artist.id}`}
+            />
+          ))}
         </div>
       </div>
       <Footer />

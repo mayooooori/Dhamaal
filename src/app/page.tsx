@@ -4,12 +4,13 @@ import ContactBanner from '@/components/home-components/Contact';
 import Hero from '@/components/home-components/Hero';
 import Navbar from '@/components/common/Navbar';
 import Reviews from '@/components/home-components/Reviews';
-import Link from 'next/link'; // Import Link for navigation
+import Link from 'next/link';
 import Footer from '@/components/common/Footer';
 import Banner from '@/components/home-components/Banner';
+import artistsData from '../../data/artist.json'; // Import JSON
 
 export default function Home() {
-  // Example data for events and artists
+  // Example data for events
   const eventData = [
     {
       image: '/event.png',
@@ -41,32 +42,13 @@ export default function Home() {
     },
   ];
 
-  const artistData = [
-    {
-      image: '/artist.png',
-      name: 'Artist Name 1',
-      bio: 'This is a short bio about the artist.',
-      artistURL: '/artist-details/1',
-    },
-    {
-      image: '/artist.png',
-      name: 'Artist Name 2',
-      bio: 'This is a short bio about the artist.',
-      artistURL: '/artist-details/2',
-    },
-    {
-      image: '/artist.png',
-      name: 'Artist Name 3',
-      bio: 'This is a short bio about the artist.',
-      artistURL: '/artist-details/3',
-    },
-    {
-      image: '/artist.png',
-      name: 'Artist Name 4',
-      bio: 'This is a short bio about the artist.',
-      artistURL: '/artist-details/4',
-    },
-  ];
+  // Function to get 4 random artists
+  function getRandomArtists() {
+    const shuffled = [...artistsData.artists].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, 4);
+  }
+
+  const randomArtists = getRandomArtists();
 
   return (
     <div className='min-h-screen flex flex-col'>
@@ -106,13 +88,13 @@ export default function Home() {
         <div className='mt-8 px-4 pb-8'>
           <h2 className='text-2xl font-semibold mb-4'>Featured Artists</h2>
           <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
-            {artistData.map((artist, index) => (
+            {randomArtists.map((artist) => (
               <ArtistCard
-                key={index}
-                image={artist.image}
+                key={artist.id}
+                image={artist.profile_image} // Make sure the JSON has `profile_image`
                 name={artist.name}
-                bio={artist.bio}
-                artistURL={artist.artistURL}
+                bio={artist.description}
+                artistURL={`/artists/${artist.id}`} // Dynamic link to details page
               />
             ))}
           </div>

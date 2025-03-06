@@ -13,7 +13,7 @@
         "2025-02-12"
       ],
       "images": [
-        "https://source.unsplash.com/random/500x300/?studio,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?studio,2",
         "https://source.unsplash.com/random/500x300/?studio,3"
       ],
@@ -27,7 +27,7 @@
       "location": "456 Arts Ave, Los Angeles, CA 90001",
       "dates_available": ["2025-02-08", "2025-02-14", "2025-02-20"],
       "images": [
-        "https://source.unsplash.com/random/500x300/?art,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?art,2",
         "https://source.unsplash.com/random/500x300/?art,3"
       ],
@@ -41,7 +41,7 @@
       "location": "789 Industrial Rd, Chicago, IL 60601",
       "dates_available": ["2025-02-03", "2025-02-07", "2025-02-11"],
       "images": [
-        "https://source.unsplash.com/random/500x300/?industrial,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?industrial,2",
         "https://source.unsplash.com/random/500x300/?industrial,3"
       ],
@@ -55,7 +55,7 @@
       "location": "101 Urban St, Miami, FL 33101",
       "dates_available": ["2025-02-04", "2025-02-09", "2025-02-15"],
       "images": [
-        "https://source.unsplash.com/random/500x300/?urban,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?urban,2",
         "https://source.unsplash.com/random/500x300/?urban,3"
       ],
@@ -69,7 +69,7 @@
       "location": "222 Sky St, San Francisco, CA 94105",
       "dates_available": ["2025-02-06", "2025-02-12", "2025-02-18"],
       "images": [
-        "https://source.unsplash.com/random/500x300/?rooftop,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?rooftop,2",
         "https://source.unsplash.com/random/500x300/?rooftop,3"
       ],
@@ -83,7 +83,7 @@
       "location": "333 VIP Blvd, Las Vegas, NV 89044",
       "dates_available": ["2025-02-07", "2025-02-13", "2025-02-19"],
       "images": [
-        "https://source.unsplash.com/random/500x300/?luxury,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?luxury,2",
         "https://source.unsplash.com/random/500x300/?luxury,3"
       ],
@@ -97,7 +97,7 @@
       "location": "444 Loft Ave, Austin, TX 73301",
       "dates_available": ["2025-02-02", "2025-02-10", "2025-02-14"],
       "images": [
-        "https://source.unsplash.com/random/500x300/?loft,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?loft,2",
         "https://source.unsplash.com/random/500x300/?loft,3"
       ],
@@ -111,7 +111,7 @@
       "location": "555 Gallery Rd, Seattle, WA 98001",
       "dates_available": ["2025-02-03", "2025-02-08", "2025-02-13"],
       "images": [
-        "https://source.unsplash.com/random/500x300/?gallery,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?gallery,2",
         "https://source.unsplash.com/random/500x300/?gallery,3"
       ],
@@ -125,7 +125,7 @@
       "location": "666 Retro Blvd, Portland, OR 97201",
       "dates_available": ["2025-02-04", "2025-02-11", "2025-02-17"],
       "images": [
-        "https://unsplash.com/photos/group-of-contemporary-active-teens-practicing-vogue-dancing-movements-while-training-in-loft-studio-or-dance-hall-Gryake64JxI",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?vintage,2",
         "https://source.unsplash.com/random/500x300/?vintage,3"
       ],
@@ -139,7 +139,7 @@
       "location": "777 Glamour St, Los Angeles, CA 90046",
       "dates_available": ["2025-02-06", "2025-02-12", "2025-02-19"],
       "images": [
-        "https://source.unsplash.com/random/500x300/?glamour,1",
+        "/studio.png",
         "https://source.unsplash.com/random/500x300/?glamour,2",
         "https://source.unsplash.com/random/500x300/?glamour,3"
       ],
