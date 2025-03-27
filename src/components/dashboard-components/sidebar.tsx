@@ -34,10 +34,13 @@ const Sidebar = ({ role }: { role: 'artist' | 'studio' | 'student' }) => {
       console.error('Logout failed:', error);
     }
   };
+  const handleProfile = () => {
+    router.push('/profile');
+  };
 
   const menuItems = {
     artist: [
-      { icon: <Home />, label: 'Home' },
+      { icon: <Home />, label: 'Home', isDropdown: false },
       {
         icon: <Calendar />,
         label: 'Events',
@@ -49,7 +52,7 @@ const Sidebar = ({ role }: { role: 'artist' | 'studio' | 'student' }) => {
           { icon: <CreditCard />, label: 'Payouts' },
         ],
       },
-      { icon: <Percent />, label: 'Promo Codes' },
+      { icon: <Percent />, label: 'Promo Codes', isDropdown: false },
     ],
     studio: [
       { icon: <Home />, label: 'Home' },
@@ -69,7 +72,7 @@ const Sidebar = ({ role }: { role: 'artist' | 'studio' | 'student' }) => {
     ],
     student: [
       { icon: <Home />, label: 'Home' },
-      { icon: <Star />, label: 'Dhamaal Points' },
+      { icon: <Star />, label: 'Dhamaal Points', isDropdown: false },
     ],
   };
 
@@ -114,7 +117,7 @@ const Sidebar = ({ role }: { role: 'artist' | 'studio' | 'student' }) => {
                   : undefined
               }
               isDropdown={item.isDropdown}
-              isOpen={item.isOpen}
+              isOpen={item.isDropdown ? item.isOpen : undefined}
               small={undefined}
             />
             {item.isDropdown && item.isOpen && !isCollapsed && (
@@ -137,13 +140,12 @@ const Sidebar = ({ role }: { role: 'artist' | 'studio' | 'student' }) => {
         ))}
       </nav>
 
-      {/* Profile & Logout */}
       <div className='p-4 flex flex-col gap-2'>
         <SidebarItem
           icon={<User />}
           label='Profile'
           collapsed={isCollapsed}
-          onClick={undefined}
+          onClick={() => handleProfile('Profile')}
           isDropdown={undefined}
           isOpen={undefined}
           small={undefined}
@@ -162,6 +164,16 @@ const Sidebar = ({ role }: { role: 'artist' | 'studio' | 'student' }) => {
   );
 };
 
+interface SidebarItemProps {
+  icon: React.ReactNode;
+  label: string;
+  collapsed: boolean;
+  onClick?: () => void;
+  isDropdown?: boolean;
+  isOpen?: boolean;
+  small?: boolean;
+}
+
 const SidebarItem = ({
   icon,
   label,
@@ -170,7 +182,7 @@ const SidebarItem = ({
   isDropdown,
   isOpen,
   small,
-}) => {
+}: SidebarItemProps) => {
   return (
     <button
       onClick={onClick}

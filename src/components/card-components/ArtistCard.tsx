@@ -20,7 +20,6 @@ const ArtistCard: React.FC<ArtistCardProps> = ({
       {/* Image section */}
       <div className='relative w-full h-72'>
         {' '}
-        {/* Increased height for a rectangular look */}
         <Image
           src={image}
           alt={name}
@@ -30,15 +29,11 @@ const ArtistCard: React.FC<ArtistCardProps> = ({
         />
       </div>
 
-      {/* Content section */}
       <div className='p-4'>
-        {/* Name and bio */}
         <div className='flex justify-between items-center'>
           <h3 className='text-xl font-semibold text-gray-800'>{name}</h3>
         </div>
         <p className='text-sm text-gray-500 mt-2 line-clamp-3'>{bio}</p>
-
-        {/* Button */}
         <Link
           href={artistURL}
           className='mt-4 inline-block w-full py-2 px-4 border border-black bg-white text-black text-center rounded-sm hover:bg-slate-200 transition-colors'

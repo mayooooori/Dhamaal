@@ -30,7 +30,7 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log('Sign-up successful! Redirecting...');
-      router.push('/'); // Ensure redirection happens
+      router.push('/'); // redirection
     } catch (error) {
       if (error instanceof Error) {
         console.error('Sign-up error:', error.message);
@@ -49,7 +49,7 @@ export default function Login() {
     try {
       await signInWithPopup(auth, provider);
       console.log('Google Sign-In successful! Redirecting...');
-      router.push('/'); // Redirect after login
+      router.push('/'); // Redirect
     } catch (error) {
       setError(
         error instanceof Error

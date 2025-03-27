@@ -9,14 +9,14 @@ interface AuthContextType {
   user: User | null;
   role: string | null;
   loading: boolean;
-  logout: () => Promise<void>; // Added logout function
+  logout: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType>({
   user: null,
   role: null,
   loading: true,
-  logout: async () => {}, // Placeholder function
+  logout: async () => {},
 });
 
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
@@ -56,7 +56,6 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     };
   }, []);
 
-  // ✅ Logout function using Firebase signOut
   const logout = async () => {
     try {
       await signOut(auth);

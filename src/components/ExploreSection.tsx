@@ -8,7 +8,6 @@ const ExploreTabs: React.FC = () => {
 
   return (
     <div className='bg-white px-1 md:px-4 lg:px-2 py-4 rounded-lg'>
-      {/* Tabs Row */}
       <div className='flex space-x-6 text-lg md:text-2xl font-semibold mb-4 overflow-x-auto whitespace-nowrap hide-scrollbar'>
         {tabs.map((tab) => (
           <h2
@@ -25,7 +24,6 @@ const ExploreTabs: React.FC = () => {
         ))}
       </div>
 
-      {/* Content below */}
       <p className='text-gray-500 text-sm md:text-base'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>

@@ -15,7 +15,7 @@
     {
       "id": 2,
       "name": "Liam Chen",
-      "banner_image": "/images/artists/liam-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Liam specializes in hip-hop and breakdancing, blending old-school moves with modern styles.",
       "event_ids": [103, 104],
@@ -27,7 +27,7 @@
     {
       "id": 3,
       "name": "Ava Thompson",
-      "banner_image": "/images/artists/ava-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Ava is a ballet dancer with a modern twist, merging classical techniques with contemporary expression.",
       "event_ids": [105, 106],
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "name": "Jackson Lee",
-      "banner_image": "/images/artists/jackson-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Jackson is a freestyle dancer who dominates the urban dance scene with his high-energy performances.",
       "event_ids": [107, 108],
@@ -51,7 +51,7 @@
     {
       "id": 5,
       "name": "Mia Rodriguez",
-      "banner_image": "/images/artists/mia-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Mia brings the passion of flamenco to the modern stage, fusing tradition with innovation.",
       "event_ids": [109, 110],
@@ -63,7 +63,7 @@
     {
       "id": 6,
       "name": "Ethan Walker",
-      "banner_image": "/images/artists/ethan-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Ethan’s tap dancing skills are unmatched, with intricate rhythms and unmatched stage presence.",
       "event_ids": [111, 112],
@@ -75,7 +75,7 @@
     {
       "id": 7,
       "name": "Olivia Bennett",
-      "banner_image": "/images/artists/olivia-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Olivia is a jazz and funk dancer who lights up every stage she steps on.",
       "event_ids": [113, 114],
@@ -87,7 +87,7 @@
     {
       "id": 8,
       "name": "Noah Martinez",
-      "banner_image": "/images/artists/noah-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Noah is a ballroom dancer specializing in Latin styles, from salsa to tango.",
       "event_ids": [115, 116],
@@ -99,7 +99,7 @@
     {
       "id": 9,
       "name": "Isabella Gomez",
-      "banner_image": "/images/artists/isabella-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Isabella is an experimental dancer blending contemporary dance with martial arts.",
       "event_ids": [117, 118],
@@ -111,7 +111,7 @@
     {
       "id": 10,
       "name": "Elijah Brooks",
-      "banner_image": "/images/artists/elijah-banner.jpg",
+      "banner_image": "/banner.jpg",
       "profile_image": "/artist.png",
       "description": "Elijah is a krump dancer bringing raw emotion and power to the stage.",
       "event_ids": [119, 120],

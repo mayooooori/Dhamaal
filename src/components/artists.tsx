@@ -1,15 +1,13 @@
 import Navbar from '@/components/common/Navbar';
 import ArtistCard from '@/components/card-components/ArtistCard';
 import Footer from '@/components/common/Footer';
-import artistsData from '../../data/artist.json'; // Import the JSON file
+import artistsData from '../../data/artist.json';
 
 export default function Artists() {
   return (
     <div>
-      {/* Fixed Navbar */}
       <Navbar />
 
-      {/* Main Content */}
       <div className='mt-5 p-4'>
         <h1 className='text-4xl font-bold mb-4'>Explore Artist</h1>
         <p className='text-lg mb-6'>
@@ -17,9 +15,7 @@ export default function Artists() {
           available artists and book them today!
         </p>
 
-        {/* Search Bars Section */}
         <div className='flex gap-6 mb-6'>
-          {/* Search Bar for Artist */}
           <div className='w-full sm:w-80 md:w-72'>
             <label
               htmlFor='artist-search'
@@ -34,8 +30,6 @@ export default function Artists() {
               className='w-full p-2 border border-gray-300 rounded-md'
             />
           </div>
-
-          {/* Search Bar for Specialty with Dropdown */}
           <div className='w-full sm:w-80 md:w-72'>
             <label
               htmlFor='specialty-search'
@@ -57,7 +51,6 @@ export default function Artists() {
           </div>
         </div>
 
-        {/* Cards Display */}
         <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
           {artistsData.artists.map((artist) => (
             <ArtistCard

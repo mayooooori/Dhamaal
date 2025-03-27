@@ -7,10 +7,9 @@ import Reviews from '@/components/home-components/Reviews';
 import Link from 'next/link';
 import Footer from '@/components/common/Footer';
 import Banner from '@/components/home-components/Banner';
-import artistsData from '../../data/artist.json'; // Import JSON
+import artistsData from '../../data/artist.json';
 
 export default function Home() {
-  // Example data for events
   const eventData = [
     {
       image: '/event.png',
@@ -52,14 +51,11 @@ export default function Home() {
 
   return (
     <div className='min-h-screen flex flex-col'>
-      {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
       <main className='flex-grow'>
         <Hero />
 
-        {/* Event Cards */}
         <div className='mt-8 px-4'>
           <h2 className='text-2xl font-semibold mb-4'>Upcoming Events</h2>
           <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
@@ -84,17 +80,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Artist Cards */}
         <div className='mt-8 px-4 pb-8'>
           <h2 className='text-2xl font-semibold mb-4'>Featured Artists</h2>
           <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
             {randomArtists.map((artist) => (
               <ArtistCard
                 key={artist.id}
-                image={artist.profile_image} // Make sure the JSON has `profile_image`
+                image={artist.profile_image}
                 name={artist.name}
                 bio={artist.description}
-                artistURL={`/artists/${artist.id}`} // Dynamic link to details page
+                artistURL={`/artists/${artist.id}`}
               />
             ))}
           </div>
